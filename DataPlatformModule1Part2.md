@@ -128,8 +128,10 @@ generated](media8/media/image1.png)
 
 20. Navigate back to the **Connection** tab and click **Add dynamic
     content** under the Relative URL field. What we want to do here is
-    get the FileDate as a csv. Input the following in the **add dynamic
-    content field:**
+    concatenate the fileName parameter that is used in the datasource
+    with the string '.csv' to create the name of the file retrieved as
+    the relative URL. Input `@concat(dataset().fileName, '.csv')` in
+    the **add dynamic content field:**
 
 ![](media8/media/image15.png)
 
